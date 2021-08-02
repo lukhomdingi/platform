@@ -54,6 +54,10 @@ export function on<State, Creators extends readonly ActionCreator[]>(
   return { reducer, types };
 }
 
+/** Please include a proper example for this syntax:
+  export const loginSuccessHandler on<any, any>(AuthApiActions.loginSuccess, (state, { user }) => ({ ...state, user }));
+*/
+
 /**
  * @description
  * Creates a reducer function to handle state transitions.
